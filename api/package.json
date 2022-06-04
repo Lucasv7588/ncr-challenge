@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"nodemon\" \" mongod --dbpath ./data/db\""
+    "dev": "mongod --dbpath ./data/db --repair &&  concurrently \"nodemon\" \" mongod --dbpath ./data/db\""
   },
   "author": "Lucas Villanueva",
   "license": "MIT",
